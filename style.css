@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #c2e59c 0%, #64b3f4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-wrap {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+  border-radius: 9px;
+  display: flex;
+  overflow: hidden;
+}
+
+#game-wrap h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  word-spacing: 2px;
+}
+
+.score-style {
+  width: 200px;
+  font-size: 8rem;
+  color: #2762c2;
+  margin-bottom: auto;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.player {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  padding: 9rem;
+}
+
+.player:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.current-wrap {
+  background-color: #2762c2;
+  width: 60%;
+  border-radius: 9px;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+  font-size: 15px;
+}
+
+.current-wrap p {
+  margin-top: 0;
+}
+
+.current-wrap input {
+  width: 100px;
+  color: #fff;
+  font-size: 5rem;
+}
+
+#newGame-btn {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#rollDice-btn {
+  position: absolute;
+  bottom: 14rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#hold-btn {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  border: none;
+  border-radius: 50rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.7rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  font-family: inherit;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.winner {
+  background-color: yellow;
+}
